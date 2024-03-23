@@ -1,3 +1,5 @@
+-- File: lua/custom/plugins/filetree.lua
+
 return {
   'nvim-neo-tree/neo-tree.nvim',
   version = '*',
@@ -8,6 +10,6 @@ return {
   },
   config = function()
     require('neo-tree').setup {}
-    vim.keymap.set('n', '<leader>T', '<Cmd>Neotree toggle<CR>')
+    vim.keymap.set('n', '<leader>|', '<Cmd>Neotree toggle<CR>', { desc = '[|] Toggle filetree' })
   end,
 }
