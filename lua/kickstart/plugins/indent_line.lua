@@ -5,7 +5,7 @@ return {
     -- See `:help ibl`
     main = 'ibl',
     opts = {
-      remove_blankline_trail = false,
+      whitespace = { remove_blankline_trail = false, } ,
     },
   },
 }
