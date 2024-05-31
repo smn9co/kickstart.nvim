@@ -6,4 +6,5 @@ return {
     main = 'ibl',
     opts = {},
   },
+  require("ibl").setup()
 }
