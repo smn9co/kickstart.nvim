@@ -17,7 +17,7 @@ return {
     vim.keymap.set('n', '<leader>vx', '<Cmd>VimuxInterruptRunner<CR>', { desc = ' Interrupt running command' })
     vim.keymap.set('n', '<leader>vz', '<Cmd>call VimuxZoomRunner()<CR>', { desc = ' [Z]oom runner pane (ctrl-s z to restore)' })
     vim.keymap.set('n', '<leader>v<C-l>', '<Cmd>VimuxClearTerminalScreen()<CR>', { desc = ' [C-l]ear terminal screen' })
-    vim.keymap.set('v', '<leader>vs', '"vy <Cmd>lua vim.g.VimuxSlime()<CR>', { desc = ' save selected text and send it to tmux ' })
+    vim.keymap.set('v', '<leader>vs', '"vy <Cmd>lua vim.g.VimuxSlime()', { desc = ' save selected text and send it to tmux ' })
     vim.keymap.set('n', '<leader>vs', 'vip "vy <Cmd>lua vim.g.VimuxSlime()<CR><Esc>', { desc = ' send paragraph to tmux ' })
   end,
 }
