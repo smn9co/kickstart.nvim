@@ -5,8 +5,8 @@ return {
     -- Define VimuxSlime function
     vim.g.VimuxSlime = function()
       vim.cmd 'call VimuxRunCommand(@v, 0)'
-      vim.cmd 'call VimuxSendKeys("Enter")'
-      vim.cmd 'call VimuxSendKeys("Enter")'
+      -- vim.cmd 'call VimuxSendKeys("Enter")'
+      -- vim.cmd 'call VimuxSendKeys("Enter")'
     end
 
     vim.keymap.set('n', '<leader>rb', '<Cmd>call VimuxRunCommand("python " . bufname("%"))<CR>', { desc = ' [R]un current file' })
